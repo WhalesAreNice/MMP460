@@ -4,74 +4,72 @@
             <meta charset="UTF-8">
             <title>Archive of Allan Ng</title>
             <link rel="stylesheet" href="style.css">
+            <script src="navigation.js"></script>
         </head>
         <body>
             <div class="container">
-                <nav>
-                    <ul>
-                        <a href="#"><li>Home</li></a>
-                        <a href="#"><li>Games</li></a>
-                        <a href="#"><li>Programs</li></a>
-                        <a href="#"><li>Contact</li></a>
-                    </ul>
-                </nav>
+                <div id="myNav" class="overlay">
+                   
+                   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                   
+                    <div class="overlay-content">
+                        <a href="index.html"><li>Home</li></a>
+                        <a href="games.html"><li>Games</li></a>
+                        <a href="programs.html"><li>Programs</li></a>
+                        <a href="contact.html"><li>Contact</li></a>
+                    </div>
+                </div>
+                <span id="menu_button" onclick="openNav()">Menu</span>
                 <h1>The Archive of Allan Ng</h1>
-                <div class="half">
-                    <img src="http://via.placeholder.com/450x450">
-                </div> <!-- half -->
-                <div class="half">
-                    <p>I'm Allan Ng, an aspiring game designer that also works in web design. I've been learning and making designs for the past few years. Spending my time working on getting better and better at my craft, while taking in more information to add to my repertoire. Slowly transitioning myself to a game designer, I will use the skills I gain through web design to make a polished game that I can call my own.</p>
-                </div> <!-- half -->
-                <div class="half">
+                <div class="myself">
                     <div class="half">
+                        <img id="portrait" src="images/portrait.jpg">
+                    </div> <!-- half -->
+                    <div class="half">
+                        <p id="personal">I'm Allan Ng, an aspiring game designer that also works in web design. I've been learning and making designs for the past few years. Spending my time working on getting better and better at my craft, while taking in more information to add to my repertoire. Slowly transitioning myself to a game designer, I will use the skills I gain through web design to make a polished game that I can call my own.</p>
+                    </div> <!-- half -->
+                </div>
+                <div class="half">
+                    <div id="skills" class="half">
                         <h2>Skills</h2>
                         <ul>
-                            <li>HTML/CSS/Javascript</li>
-                            <li>Photoshop</li>
-                            <li>Illustrator</li>
-                            <li>Java</li>
-                            <li>API</li>
-                        </ul>
-                    </div><!-- half -->
-                    <div class="half">
-                        <h2>Level</h2>
-                        <ul>
-                            <li>Intermediate</li>
-                            <li>Intermediate</li>
-                            <li>Intermediate</li>
-                            <li>Beginner</li>
-                            <li>Beginner</li>
+                            <li>HTML/CSS/Javascript --> Intermediate</li>
+                            <li>Photoshop  --> Intermediate</li>
+                            <li>Illustrator  --> Intermediate</li>
+                            <li>Java  --> Beginner</li>
+                            <li>API  --> Beginner</li>
                         </ul>
                     </div><!-- half -->
                 </div> <!-- half -->
                 <div class="half">
-                    <img src="http://via.placeholder.com/350x350">
+                    <img src="images/skills.png">
                 </div>
                 <div class="contact">
+                   <h2>Contact Me</h2>
                     <form action="">
                         <input type="text" value="Name">
                         <input type="text" value="Email">
                         <input type="text" value="Subject">
-                        <textarea name="" id="" cols="30" rows="7"></textarea>
+                        <textarea name="" id="" cols="50" rows="10"></textarea>
                         <input type="submit" value="Submit">
                     </form>
                 </div>
+                <div class="half">
+                    <h2>Resume for Download</h2>
+                    <a href="Allan%20Ng's%20Resume.pdf" download><img src="images/resume-icon-png-3.png" alt="resume" width="200px"></a>
+                </div>
                 <footer>
-                    <hr>
+                   <hr>
                     <div class="foot">
-                        <a href="#"><p>Home</p></a>
-                        <a href="#"><p>Games</p></a>
-                        <a href="#"><p>Programs</p></a>
-                        <a href="#"><p>Contact</p></a>
+                        <a href="index.html"><p>Home</p></a>
+                        <a href="games.html"><p>Games</p></a>
+                        <a href="programs.html"><p>Programs</p></a>
+                        <a href="contact.html"><p>Contact</p></a>
                     </div>
                     <div class="foot">
                         <p>Social Media</p>
-                        <a href="https://placeholder.com"><img src="http://via.placeholder.com/50x50"></a>
-                        <a href="https://placeholder.com"><img src="http://via.placeholder.com/50x50"></a>
-                        <a href="https://placeholder.com"><img src="http://via.placeholder.com/50x50"></a>
-                        <a href="https://placeholder.com"><img src="http://via.placeholder.com/50x50"></a>
-                        <a href="https://placeholder.com"><img src="http://via.placeholder.com/50x50"></a>
-                        <a href="https://placeholder.com"><img src="http://via.placeholder.com/50x50"></a>
+                        <a href="https://github.com/WhalesAreNice/"><img src="images/github-logo-50x50.png"></a>
+                        <a href="https://www.linkedin.com/in/allan-ng-9133a615a/"><img src="images/linkedin-logo-50x50.png"></a>
                     </div>
                 </footer>
             </div> <!-- container -->
