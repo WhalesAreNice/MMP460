@@ -189,11 +189,37 @@ hr {
 }
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-@media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
+@media screen and (max-width: 799px) {
+/*    .overlay a {font-size: 20px}*/
+/*    .overlay .closebtn {*/
+/*        font-size: 40px;*/
+/*        top: 15px;*/
+/*        right: 35px;*/
+/*    }*/
+    
+    .container {
+        width:400px;
+    }
+    
+    .tile {
+        margin:0 auto;
+        margin-left:6%;
+        margin-bottom:2%;
+    }
+    
+    .site-name {
+        display:inline-block;
+        text-align:center;
+        margin-left:9%;
+    }
+    
+    #menu_button {
+        float:none;
+        overflow:hidden;
+        margin-left:42%;
+    }
+    
+    .post-title {
+        margin-top:0;
     }
 }
